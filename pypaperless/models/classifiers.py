@@ -31,6 +31,9 @@ class Correspondent(
     document_count: int | None = None
     last_correspondence: datetime.datetime | None = None
 
+    remark: str | None = None
+    external_reference: str | None = None
+
     def __init__(self, api: "Paperless", data: dict[str, Any]) -> None:
         """Initialize a `Correspondent` instance."""
         super().__init__(api, data)
@@ -75,6 +78,8 @@ class DocumentType(
     slug: str | None = None
     name: str | None = None
     document_count: int | None = None
+
+    remark: str | None = None
 
     def __init__(self, api: "Paperless", data: dict[str, Any]) -> None:
         """Initialize a `DocumentType` instance."""
