@@ -27,6 +27,12 @@ class CustomField(
     name: str | None = None
     data_type: CustomFieldType | None = None
     extra_data: CustomFieldExtraData | None = None
+
+    group: str | None = None
+    label: str | None = None
+    remark: str | None = None
+    order: int = 0
+
     document_count: int | None = None
 
     def __init__(self, api: "Paperless", data: dict[str, Any]) -> None:

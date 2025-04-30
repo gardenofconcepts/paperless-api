@@ -42,6 +42,8 @@ class DocumentCustomFieldList(PaperlessModelData):
         CustomFieldType.INTEGER: CustomFieldIntegerValue,
         CustomFieldType.SELECT: CustomFieldSelectValue,
         CustomFieldType.STRING: CustomFieldStringValue,
+        CustomFieldType.TEXT: CustomFieldStringValue,
+        CustomFieldType.JSON: CustomFieldStringValue,
     }
 
     def __init__(self, api: "Paperless", data: list[dict[str, Any]]) -> None:

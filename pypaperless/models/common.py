@@ -40,6 +40,8 @@ class CustomFieldType(Enum):
     MONETARY = "monetary"
     DOCUMENT_LINK = "documentlink"
     SELECT = "select"
+    JSON = "json"
+    TEXT = "text"
     UNKNOWN = "unknown"
 
     @classmethod
