@@ -179,6 +179,8 @@ class Tag(
     is_inbox_tag: bool | None = None
     document_count: int | None = None
 
+    remark: str | None = None
+
     def __init__(self, api: "Paperless", data: dict[str, Any]) -> None:
         """Initialize a `Tag` instance."""
         super().__init__(api, data)
